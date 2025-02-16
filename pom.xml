@@ -46,12 +46,26 @@
 		</dependency>			
 	</dependencies>
 	
-	<distributionManagement>
-		<repository>
-			<id>nexus</id> 
-	    		<name>Nexus Repository</name> 
-	    		<url>http://localhost:8081/repository/maven-snapshots/</url> 
-	  	</repository>
-	</distributionManagement>
-	
+	<profiles>
+		<profile>
+			<id>nexus</id>
+			<distributionManagement>
+				<repository>
+					<id>nexus</id> 
+					<name>Nexus Repository</name> 
+					<url>http://localhost:8081/repository/maven-snapshots/</url> 
+				</repository>
+			</distributionManagement>
+		</profile>
+		<profile>
+			<id>reposilite-repository</id>
+			<distributionManagement>
+				<repository>
+					<id>reposilite-repository</id>
+					<name>Reposilite Repository</name>
+					<url>http://3.7.46.30:8080/snapshots</url>
+				</repository>
+			</distributionManagement>
+		</profile>
+	</profiles>
 </project>
