@@ -23,6 +23,10 @@
 			<name>tortoiseDev</name>
 			<email>koveeda@gmail.com</email>
 		</developer>
+		<developer>
+			<name>Anas</name>
+			<email>connect.anas.dev@gmail.com</email>
+		</developer>
 	</developers>
 	<scm>
 		<connection/>
